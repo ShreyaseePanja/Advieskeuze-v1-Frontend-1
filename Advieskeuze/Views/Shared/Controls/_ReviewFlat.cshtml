@@ -2,7 +2,7 @@
 @model Tuple<AdvieskeuzeCode.DataModel.Beoordeling, bool, bool, bool>
 
 @{
-  string cdn = "https://advieskeuze-v1-frontend.azurewebsites.net/";
+  string cdn = GewrapteSettings.CDNUrl;
   var review = Model.Item1;
   var renderHeader = Model.Item2;
   var renderDetailslink = Model.Item3;
